@@ -145,7 +145,7 @@
       },
       // `헤더 메뉴`
       layer: {
-        root: 'slickgrid-wrap-grid-popup slickgrid-type-grid',
+        warpDiv: 'slickgrid-wrap-grid-popup slickgrid-type-grid',
         div: 'slickgrid-wrap-grid-popup',
         ul: 'slickgrid-list-grid-popup',
         hasIcons: 'slickgrid-grid-type',
@@ -253,7 +253,7 @@
       }
 
       $layer = $("<div></div>")
-        .addClass(classs.layer.root)
+        .addClass(classs.layer.warpDiv)
         .appendTo(_grid.getContainerNode());
 
       const $ul = addUlElementToDiv($layer);

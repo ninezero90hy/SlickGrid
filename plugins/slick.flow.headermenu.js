@@ -232,7 +232,7 @@
       }
     }
 
-    function showMenu(e) {
+    function showMenu(event) {
       const $menuButton = $(this);
       const menu = $menuButton.data("menu");
       const columnDef = $menuButton.data("column");
@@ -242,7 +242,7 @@
         "grid": _grid,
         "column": columnDef,
         "menu": menu
-      }, e, _self) == false) {
+      }, event, _self) == false) {
         return;
       }
 
@@ -267,8 +267,8 @@
       saveActiveHeaderColumn($menuButton);
       addClassToActiveHeaderColumn();
 
-      e.preventDefault();
-      e.stopPropagation();
+      event.preventDefault();
+      event.stopPropagation();
     }
 
     function createMenu(item, $ul) {
@@ -323,9 +323,9 @@
       e.stopPropagation();
     }
 
-    function handleBodyMouseDown(e) {
+    function handleBodyMouseDown(event) {
       // noinspection EqualityComparisonWithCoercionJS
-      if ($layer && $layer[0] != e.target && !$.contains($layer[0], e.target)) {
+      if ($layer && $layer[0] != event.target && !$.contains($layer[0], event.target)) {
         hideMenu();
       }
     }

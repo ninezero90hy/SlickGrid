@@ -277,7 +277,7 @@
 
       if (item.disabled) changeLiElementDisabledState($li);
       if (item.iconClass) addIconToAtag(item, $a);
-      if (item.title) addTootip($li, item);
+      if (item.title) addTooltip($li, item);
 
       if (hasChild(item)) {
         addMoreIconToAtag($a);
@@ -297,7 +297,7 @@
       });
     }
 
-    function addTootip($li, item) {
+    function addTooltip($li, item) {
       $li.attr('title', item.title);
     }
 

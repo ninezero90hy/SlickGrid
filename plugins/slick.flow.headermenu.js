@@ -357,7 +357,7 @@
     }
 
     function findActiveHeaderColumn($menuButton) {
-      return $menuButton.closest('.' + classs.parent.header.target);
+      return $menuButton.closest(`.${classs.parent.header.target}`);
     }
 
     function saveActiveHeaderColumn($menuButton) {
